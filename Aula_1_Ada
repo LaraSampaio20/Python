@@ -1,0 +1,625 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LaraSampaio20/Python/blob/main/Aula_1_Ada\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cYH6W7msJxlk",
+        "outputId": "58630be1-f47a-417f-c00a-15418beed60f"
+      },
+      "outputs": [
+        {
+          "data": {
+            "text/plain": [
+              "int"
+            ]
+          },
+          "execution_count": 4,
+          "metadata": {},
+          "output_type": "execute_result"
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 1 - Type\n",
+        "\n",
+        "Idade= 28\n",
+        "type(Idade)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rRhrt_CtOhjy",
+        "outputId": "f312078a-bf50-4655-b6f4-653736cce1a9"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Olá mundo!\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 2 -Print\n",
+        "\n",
+        "print(\"Olá mundo!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UmKqkCOsPLFC",
+        "outputId": "7603e86c-f8c0-4dc5-abb4-b3303150f6b7"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Lara\n",
+            "Sampaio\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 2.1 -Print\n",
+        "\n",
+        "Nome= \"Lara\"\n",
+        "Sobrenome= \"Sampaio\"\n",
+        "\n",
+        "print(Nome)\n",
+        "print(Sobrenome)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K5NpKjz2PqFR",
+        "outputId": "0cb08d0b-99f7-4c79-9c4e-094e521058c6"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Lara Sampaio\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 2.2 -Print concatenação string\n",
+        "\n",
+        "Nome= \"Lara\"\n",
+        "Sobrenome= \"Sampaio\"\n",
+        "\n",
+        "print(Nome+ \" \" +Sobrenome)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oaqS7OMmV4or",
+        "outputId": "f4e33346-b238-45f6-b730-bfb6f44ae6da"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Olá, Lara Sampaio! Você tem 28 anos.\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 2.3 -Print concatenação tipos\n",
+        "\n",
+        "nome=\"Lara\"\n",
+        "sobrenome=\"Sampaio\"\n",
+        "idade=28\n",
+        "\n",
+        "print(f\"Olá, {nome} {sobrenome}! Você tem {idade} anos.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_6vl4Rr5XZ0T",
+        "outputId": "33d370d3-a8c0-44c8-b7ba-7de942023b83"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "67 + 1000 \n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 2.4 -Print concatenação tipos\n",
+        "\n",
+        "num1= 67\n",
+        "num2=1000\n",
+        "resultado= \"\"\n",
+        "\n",
+        "print(f\"{num1} + {num2} {resultado}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HQ6_0WttZ24y",
+        "outputId": "c4e3c953-7524-46a0-a8b8-9a24136668ec"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "30567\n",
+            "-30433\n",
+            "0.0021967213114754097\n",
+            "204350\n",
+            "67\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 2.5 -Print operação tipos\n",
+        "\n",
+        "Soma= 67+ 30500\n",
+        "Subtração = 67-30500\n",
+        "Divisão = 67 / 30500\n",
+        "Mutiplicação = 67* 3050\n",
+        "Módulo = 67 %30500\n",
+        "\n",
+        "print(Soma)\n",
+        "print(Subtração)\n",
+        "print(Divisão)\n",
+        "print(Mutiplicação)\n",
+        "print(Módulo)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S1ChP0mba9UA",
+        "outputId": "e96dd321-2983-44dc-faaf-9cbd897d49c6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1400.0\n",
+            "{2500}\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 3 -Print operação MEDIA\n",
+        "\n",
+        "media= {300 + 2200}\n",
+        "\n",
+        "print(f\"{300+2200/2}\")\n",
+        "print(media)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dNzxxRztmho6",
+        "outputId": "24839170-b4ae-4143-d1e1-661c62b9f209"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            " Lara:.12.566666666666666 \n",
+            " Erika: 17.23333333333333 \n",
+            " Thais:17.833333333333332\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Primeiro período - Teste 3.1 -Print operação MEDIA\n",
+        "media= {3.5+6+9.2}\n",
+        "media2={6.8+8.1+7}\n",
+        "media3={5.6+9.9+7}\n",
+        "\n",
+        "print(f\" Lara:.{3.5+6+9.2/3} \\n Erika: {6.8+8.1+7/3} \\n Thais:{5.6+9.9+7/3}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tfZjQgFt_LD6",
+        "outputId": "52969044-c300-4fab-a9f1-8eed66fac38e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o seu nome: Lara\n",
+            "Digite sua idade: 28\n",
+            "Lara\n",
+            "28\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 4-INPUT\n",
+        "\n",
+        "nome= input(\"Digite o seu nome: \")\n",
+        "idade=input(\"Digite sua idade: \")\n",
+        "\n",
+        "print(nome)\n",
+        "print(idade)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3r2mPtgpBj2h",
+        "outputId": "cb0507b0-d882-4d47-b67d-f497158ff9ed"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o primeiro numero3232656\n",
+            "Digite o segundo numero256.22\n",
+            "3232912.22\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 5-INPUT- Entrada de Dados\n",
+        "\n",
+        "#Para somar ou fazer qualquer operação, sempre usar as oprações desejadas, int/float..\n",
+        "\n",
+        "\n",
+        "# O computador pede para você o 1° numero\n",
+        "\n",
+        "num1= int(input(\"Digite o primeiro numero\"))\n",
+        "\n",
+        "# O computador pede para você o 2° numero\n",
+        "\n",
+        "num2= float(input(\"Digite o segundo numero\"))\n",
+        "\n",
+        "#O computador calcula a soma dos dois números e imprime a soma\n",
+        "\n",
+        "Soma= num1 + num2\n",
+        "print(Soma)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cMJt5xE_EYNa",
+        "outputId": "2b44d31c-7b46-4795-c729-ffd366696dee"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite sua idade: 28\n",
+            "Digite o ano atual: 2025\n",
+            "-1997\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 5.1-INPUT- Entrada de Dados - Calculadora\n",
+        "\n",
+        "minha_idade= int(input(\"Digite sua idade: \"))\n",
+        "ano_atual= int(input(\"Digite o ano atual: \"))\n",
+        "resultado = minha_idade - ano_atual\n",
+        "\n",
+        "print(resultado)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Es055YV0KIZn",
+        "outputId": "2173e9d9-8b8b-4a48-bcee-dbcdcec8a9da"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Insira a nota da p1(Lara):5\n",
+            "Insira a nota da p2(Lara):6\n",
+            "Insira a nota da p3(Lara):8\n",
+            "A média das provas é 13.67\n",
+            "Insira a nota da p1(Erika):5\n",
+            "Insira a nota da p2 (Erika):6\n",
+            "Insira a nota da p3(Erika):8\n",
+            "A média das provas é 13.67\n",
+            "Insira a nota da p1(Thais):5\n",
+            "Insira a nota da p2 (Thais:9\n",
+            "Insira a nota da p3 (Thais):5\n",
+            "15.67\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 5.2-INPUT- Entrada de Dados - Alterando a media de notas com FLOAT\n",
+        "\n",
+        "#Entrada de notas de Lara\n",
+        "Lara= int(input(\"Insira a nota da p1(Lara):\"))\n",
+        "Larap2= int(input(\"Insira a nota da p2(Lara):\"))\n",
+        "Larap3= int(input(\"Insira a nota da p3(Lara):\"))\n",
+        "media= (Lara + Larap2 +Larap3)/3\n",
+        "print(f\"A média é:  {media:.2f}\")\n",
+        "\n",
+        "#Entrada de notas de Erika\n",
+        "\n",
+        "Erika= int(input(\"Insira a nota da p1(Erika):\"))\n",
+        "Erikap2= int(input(\"Insira a nota da p2 (Erika):\"))\n",
+        "Erikap3= int(input(\"Insira a nota da p3(Erika):\"))\n",
+        "media1= (Erika + Erikap2 + Erikap3)/3\n",
+        "print(f\"A média é:  {media1:.2f}\")\n",
+        "\n",
+        "#Entrada de notas de Thais\n",
+        "\n",
+        "Thais= int(input(\"Insira a nota da p1(Thais):\"))\n",
+        "Thaisp2= int(input(\"Insira a nota da p2 (Thais:\"))\n",
+        "Thaisp3= int(input(\"Insira a nota da p3 (Thais):\"))\n",
+        "media2= (Thais +Thaisp2 + Thaisp3)/3\n",
+        "print(f\"A média é: {media2:.2f}\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vNQKb4LpTxWV",
+        "outputId": "93de6003-1870-4cdb-d3df-9f17e94ec91c"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "True\n",
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 6 - COMPARAÇÕES - OPERADORES RELACIONAIS\n",
+        "\n",
+        "print(100 ==20)\n",
+        "print(30 > 20)\n",
+        "print(20 > 100)\n",
+        "print(200 >= 40)\n",
+        "print(20 <= 100)\n",
+        "print(40 != 60)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z6FHtmO0Us3s",
+        "outputId": "4a5f52ff-3ff8-4ef1-c833-fd6d22021e0d"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um numero:9\n",
+            "Digite mais um numero:5\n",
+            "O resultado é: False e o valor da soma é: 14\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 6.1 - COMPARAÇÕES - OPERADORES RELACIONAIS\n",
+        "\n",
+        "# O computador pede o 1° numero\n",
+        "Entrada= int(input(\"Digite um numero:\"))\n",
+        "\n",
+        "# O computador pede o 2° numero\n",
+        "Entrada2= int(input(\"Digite mais um numero:\"))\n",
+        "\n",
+        "# O computador soma esses dois numeros\n",
+        "Soma= Entrada + Entrada2\n",
+        "\n",
+        "#O computador verificar se a soma desses numeros é maior ou igual a 15\n",
+        "Verificação= Soma >= 15\n",
+        "\n",
+        "#Resultado\n",
+        "print(f\"O resultado é: {Verificação} e o valor da soma é: {Soma}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true,
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FQ5mTrldXQ6c",
+        "outputId": "42cbdcdf-b76e-405d-fe64-0cf3b22c5531"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "A média das notas é:  4.00 e maior ou igual a 7? False\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Aula 1 - Segundo período - Teste 6.1 - COMPARAÇÕES - OPERADORES RELACIONAIS - Notas das alunas\n",
+        "\n",
+        "#Entrada de notas de Lara\n",
+        "\n",
+        "Lara= int(input(\"Insira a nota da p1(Lara):\"))\n",
+        "Larap2= int(input(\"Insira a nota da p2(Lara):\"))\n",
+        "Larap3= int(input(\"Insira a nota da p3(Lara):\"))\n",
+        "media= (Lara + Larap2 +Larap3)/3\n",
+        "Verificação1= media >= 7\n",
+        "print(f\"A média das notas é:  {media:.2f} e maior ou igual a 7? {Verificação1}\")\n",
+        "\n",
+        "#Entrada de notas de Erika\n",
+        "\n",
+        "Erika= int(input(\"Insira a nota da p1(Erika):\"))\n",
+        "Erikap2= int(input(\"Insira a nota da p2 (Erika):\"))\n",
+        "Erikap3= int(input(\"Insira a nota da p3(Erika):\"))\n",
+        "media1= (Erika + Erikap2 + Erikap3)/3\n",
+        "Verificação2= media1 >= 7\n",
+        "print(f\"A média das notas é:   {media1:.2f} e maior ou igual a 7? {Verificação2}\")\n",
+        "\n",
+        "#Entrada de notas de Thais\n",
+        "\n",
+        "Thais= int(input(\"Insira a nota da p1(Thais):\"))\n",
+        "Thaisp2= int(input(\"Insira a nota da p2 (Thais:\"))\n",
+        "Thaisp3= int(input(\"Insira a nota da p3 (Thais):\"))\n",
+        "media2= (Thais +Thaisp2 + Thaisp3)/3\n",
+        "Verificação3= media2 >= 7\n",
+        "print(f\"A média das notas é:  {media2:.2f} e maior ou igual a 7? {Verificação3} \")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JFtQNjxoZ6Ik",
+        "outputId": "507eb1f4-6da1-4123-e24a-23bacac88062"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            " Boas Vindas! Vamos as regras do nosso jogo:\n",
+            "  Pedra ganha de Tesoura\n",
+            "  Papel ganha de Pedra\n",
+            "  tesoura ganha de Papel\n",
+            "  Empate: Ocorre quando ambas escolhem a mesma opção\n"
+          ]
+        }
+      ],
+      "source": [
+        "#DESAFIO PEDRA, PAPEL E TESOURA\n",
+        "\n",
+        "#PASSO 1 - BOAS VINDAS\n",
+        "\n",
+        "print(\" Boas Vindas! Vamos as regras do nosso jogo:\")\n",
+        "print(\"  Pedra ganha de Tesoura\\n  Papel ganha de Pedra\\n  tesoura ganha de Papel\\n  Empate: Ocorre quando ambas escolhem a mesma opção\")\n",
+        "\n",
+        "#Jogador 1\n",
+        "\n",
+        "jogador1 input(\"Insira a sua jogada:\")\n",
+        "jogador2 input(\"Insira a sua jogada:\")\n",
+        "\n"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPL1HY4+gQophXaqm1C6K7N",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
