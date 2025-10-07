@@ -1,0 +1,439 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPFICgwv8/dAmPi+/XrMOyT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LaraSampaio20/Python/blob/main/Ada_Aula_03\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A modularização em Python é a ideia de \"dividir\" um programa em partes menores, chamadas de módulos ou funções\n",
+        "\n",
+        "Em vez de escrever tudo de uma vez, nós dividimos o programa em pequenos blocos, cada um cuidando de uma parte do trabalho.\n",
+        "\n",
+        "Isso deixa o programa mais organizado e fácil de entender. Vamos ver como a modularização funciona!\n",
+        "\n",
+        "Estrutura do módulo/função\n",
+        "\n",
+        "`def` `soma(numero_1 , numero_2)`:\n",
+        "\n",
+        "O `def` é uma palavra reservada do Python que utilizamos para declarar uma função\n",
+        "\n",
+        "Em seguida, temos o nome da função, você pode nomeá-la da forma que preferir. Neste exemplo, a função é chamada de \"soma\"\n",
+        "\n",
+        "Por fim, dentro dos parenteses temos os parâmetros, que funcionam como \"caixinhas\": quando você chama a função, coloca valores dentro delas\n"
+      ],
+      "metadata": {
+        "id": "H5xRiM8nOEv8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "FphOT9uqMKlG"
+      },
+      "outputs": [],
+      "source": [
+        "#Exemplo de como utilizar uma função\n",
+        "\n",
+        "#Função\n",
+        "def soma(numero_1, numero_2):\n",
+        "  return numero_1 + numero_2 #Aqui usamos os parâmetros que definimos na função\n",
+        "\n",
+        "#Utilizando a função\n",
+        "soma(15,15) #É assim que \"chamamos\" a função!\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Notou algo diferente? Afinal, o que significa esse `return`?\n",
+        "\n",
+        "Uma função com `return` devolve um valor depois de executar seu código. Esse valor pode ser guardado em uma variável, usado em cálculos ou passado para outra função!\n",
+        "\n",
+        " O `return` é **diferente** do print:\n",
+        "\n",
+        "Você também pode utilizar print dentro das funções, mas ele vai apenas exibir o resultado na tela."
+      ],
+      "metadata": {
+        "id": "9xFIVBTVOg_k"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Função com print\n",
+        "\n",
+        "#Função\n",
+        "def saudacao(usuario):\n",
+        "  print(f\"Olá, {usuario}! Seja bem-vinda.\")\n",
+        "\n",
+        "#Utilizando a função\n",
+        "nome = input(\"Digite seu nome: \")\n",
+        "saudacao(nome)\n",
+        "\n",
+        "# *************************************************************************************\n",
+        "\n",
+        "#Função com return\n",
+        "\n",
+        "#Função\n",
+        "def media(nota_1,nota_2):\n",
+        "  return(nota_1+nota_2)/2\n",
+        "\n",
+        "#Utilizando a função\n",
+        "nota_p1_erika = 7.5\n",
+        "nota_p2_erika = 8.1\n",
+        "\n",
+        "nota_p1_thais = 5.9\n",
+        "nota_p2_thais = 9.8\n",
+        "\n",
+        "media_erika = media(nota_p1_erika,nota_p2_erika)\n",
+        "media_thais = media(nota_p1_thais, nota_p2_thais)\n",
+        "\n",
+        "print(f\"A média da Erika é {media_erika:.2f} e a média da Thais é {media_thais:.2f}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "uga2BCCgPLiV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Faça uma função que informa se um número é positivo, negativo ou igual a zero. Em seguida, teste com três entradas\"\n",
+        "\n",
+        "def num(num1):\n",
+        "  if num1 > 0:\n",
+        "    return(f\"O numero {numero:.2f} é positivo\")\n",
+        "  elif (num1 < 0):\n",
+        "    return(f\"O numero {numero:.2f} é negativo\")\n",
+        "\n",
+        "  else:\n",
+        "    return(f\"O numero {numero:.2f} é igual a Zero\")\n",
+        "\n",
+        "numero = float(input(\"Digite um numero: \"))\n",
+        "num(numero)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "id": "AC9HiLR5PXuS",
+        "outputId": "e4150238-a817-4bb7-bcf6-05672f2046e6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um numero: -2\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'O numero -2.0 é negativo'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Faça uma função que informa se um número é positivo, negativo ou igual a zero. Em seguida, teste com três entradas\" - TESTE COM 3 ENTRADAS\n",
+        "def num(num1,num2,num3):\n",
+        "  if num1 > 0 and num2 > 0 and num3 > 0:\n",
+        "    return(f\"Os numeros {numero:.2f}, {numero2:.2f}, {numero3:.2f} são positivos\")\n",
+        "\n",
+        "  elif (num1 < 0 and num2 < 0 and num3 < 0):\n",
+        "    return(f\"Os numeros {numero:.2f}, {numero:2.2f}, {numero3:.2f} são negativos\")\n",
+        "\n",
+        "\n",
+        "  else:\n",
+        "    return(f\"Os numeros {numero:.2f}, {numero2:.2f}, {numero3:.2f} é igual a Zero\")\n",
+        "\n",
+        "numero = float(input(\"Digite um numero: \"))\n",
+        "numero2 = float(input(\"Digite um numero: \"))\n",
+        "numero3 = float(input(\"Digite um numero: \"))\n",
+        "num(numero,numero2,numero3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 87
+        },
+        "id": "ieABWHwqWMSL",
+        "outputId": "fec61d62-0d47-4512-da84-34db3b2a90ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um numero: -10\n",
+            "Digite um numero: -100\n",
+            "Digite um numero: -89\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Os numeros -10.00, -10.00, -89.00 são negativos'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Faça uma função que informa o valor do frete de uma compra com base na distância que o usuário inserir:\n",
+        "\n",
+        "    \n",
+        "\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "*  Distância menor ou igual 5km: R$10,00\n",
+        "\n",
+        "*   Distância menor ou igual 15km: R$30,00\n",
+        "*   Distância maior que 30km: \"Não há entrega disponível!\n",
+        "  \n",
+        "*   Distância menor ou igual 30km: R$60,00\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "mEYV05nigEoo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "\n",
+        "def frete(distancia):\n",
+        "\n",
+        "  if distancia <= 5:\n",
+        "    print(\"R$ 10,00\")\n",
+        "  elif distancia <= 15:\n",
+        "    print(\"R$ 30,00\")\n",
+        "  elif distancia <= 30:\n",
+        "    print(\"R$ 60,00\")\n",
+        "  else:\n",
+        "    print(\"Não possui frete para a sua área\")\n",
+        "\n",
+        "Km = int(input('Digite a distancia: '))\n",
+        "frete(Km)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mjOEs2UFeJtc",
+        "outputId": "a76b7cf5-96ae-4b41-f1f0-b246edf0e6ba"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a distancia: 55\n",
+            "Não possui frete para a sua [area]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Imagine que você quer repetir um recado várias vezes, mas sem precisar escrever tudo na mão. As repetições (também podem ser chamadas de laços ou loops) fazem isso por você! Vamos iniciar com a estrutura range()\n",
+        "\n",
+        "Essa estrutura cria uma sequência de números e você escolhe de onde começa, até onde vai (sem incluir o último número) e, se quiser, define de quantos em quantos números ela pula\n",
+        "\n",
+        "Vamos ver como podemos \"chamar\" o range():\n",
+        "\n",
+        "range(valor_final) começa em 0 e vai até valor_final  -  1\n",
+        "\n",
+        "range(valor_inicial, valor_final) começa em valor_inicial e vai até valor_final -  1\n",
+        "\n",
+        "range(valor_inicial, valor_final, pulo) \"pula\" de do valor_inicial ao valor_final de acordo com o valor do pulo\n",
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "Exemplo de como utilizar o range(valor_final)\n",
+        "list(range(10)) #Vai exibir de 0 até 10 - 1\n",
+        "\n",
+        "Exemplo de como utilizar o range(valor_inicial, valor_final)\n",
+        "list(range(1, 10)) #Vai exibir de 1 até 10 - 1\n",
+        "\n",
+        "Exemplo de como utilizar o range(valor_inicial, valor_final, pulo)\n",
+        "list(range(1,10,2)) #Vai exibir de 1 até 10 - 1, pulando de 2 em 2"
+      ],
+      "metadata": {
+        "id": "nIIvvxsZkW_o"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# List e range\n",
+        "list(range(20+1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "26cQYjwclTpS",
+        "outputId": "afd6e3fc-a1ec-4ce9-b168-2bc2c0daff59"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#for e range\n",
+        "\n",
+        "for i in range(0+11):\n",
+        "  print(f'\\n {i}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iSg2jFTmm1EL",
+        "outputId": "a60f35aa-2cd2-4b4d-9231-38e0e1b8b6a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            " 0\n",
+            "\n",
+            " 1\n",
+            "\n",
+            " 2\n",
+            "\n",
+            " 3\n",
+            "\n",
+            " 4\n",
+            "\n",
+            " 5\n",
+            "\n",
+            " 6\n",
+            "\n",
+            " 7\n",
+            "\n",
+            " 8\n",
+            "\n",
+            " 9\n",
+            "\n",
+            " 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#nome e idade\n",
+        "\n",
+        "numero = int(input('Digite Digite a quantidade de nomes: '))\n",
+        "for i in range(numero):\n",
+        "  nomes = input('Digite seu nome:')\n",
+        "  idade = int(input('Digite sua idade: '))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mKVJ-sVzoFCg",
+        "outputId": "d08399c9-2778-4dd0-84a6-40e9da3d8a52"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite Digite a quantidade de nomes: 2\n",
+            "Digite seu nome:a\n",
+            "Digite sua idade: 21\n",
+            "Digite seu nome:b\n",
+            "Digite sua idade: 21\n",
+            "1\n",
+            "Me chamo b e tenho 21 \n"
+          ]
+        }
+      ]
+    }
+  ]
+}
